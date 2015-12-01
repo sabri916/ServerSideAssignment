@@ -56,7 +56,6 @@
                                     <asp:RequiredFieldValidator ID="password_validator" ControlToValidate="password_box" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator> 
                                     <br />
                                     <asp:Button ID="login_button" runat="server" Text="Login" class="btn btn-primary" />
-                                    
                                 </div>
                             </form>
                         </div>
