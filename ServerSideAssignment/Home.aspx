@@ -21,6 +21,7 @@
     <title>Home</title>
 
 </head>
+
 <body>
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
