@@ -24,7 +24,8 @@
     <div class="container">
         <div class="col-md-5">
             <form role="form" id="form1" runat="server">
-                <asp:ValidationSummary ID="registration_validation_summary" DisplayMode="List" runat="server" />
+                <asp:ValidationSummary CssClass="alert alert-danger" ID="registration_validation_summary" DisplayMode="BulletList" runat="server" />
+
                 <br />
 
                 <div class="form-group">        
@@ -34,7 +35,7 @@
                         ID="student_id_required_validator"
                         ControlToValidate="student_id_box"
                         runat="server"
-                        ErrorMessage="<div class='alert alert-danger'>Please enter Student ID</div>"
+                        ErrorMessage="Please enter Student ID"
                         Text="<div class='alert-danger'><strong>*</strong></div>"
                         SetFocusOnError="True"
                         Display="Dynamic">
@@ -50,7 +51,7 @@
                     ID="student_id_validator"
                     ControlToValidate="password_box" 
                     runat="server" 
-                    ErrorMessage="<div class='alert alert-danger'>Please enter password</div>"
+                    ErrorMessage="Please enter password"
                     Text ="<div class='alert-danger'><strong>*</strong></div>"
                     CssClass="alert-text" 
                     SetFocusOnError="True" 
@@ -66,7 +67,7 @@
                     ID="password2_required_validator"
                     ControlToValidate="password_box2" 
                     runat="server" 
-                    ErrorMessage="<div class='alert alert-danger'>Please enter Password</div>"
+                    ErrorMessage="Please enter Password"
                     Text="<div class='alert-danger'><strong>*</strong></div>"
                     CssClass="alert-text" 
                     SetFocusOnError="True" 
@@ -79,7 +80,7 @@
                     Display="Dynamic"
                     ControlToCompare="password_box"
                     ControlToValidate="password_box2"
-                    ErrorMessage="<div class='alert alert-danger'>CompareValidator</div>">
+                    ErrorMessage="CompareValidator">
                     </asp:CompareValidator>
                     <br />
                 </div> 
@@ -91,7 +92,7 @@
                     ID="email_required_validator"
                     ControlToValidate="email_box" 
                     runat="server" 
-                    ErrorMessage="<div class='alert alert-danger'>Please enter email</div>"
+                    ErrorMessage="Please enter email"
                     Text="<div class='alert-danger'><strong>*</strong></div>"
                     CssClass="alert-text" 
                     SetFocusOnError="True" 
@@ -119,7 +120,7 @@
                     ID="specialisation_required_validator"
                     ControlToValidate="specialisation_list" 
                     runat="server" 
-                    ErrorMessage="<div class='alert alert-danger'>Please Select your specialisation</div>"
+                    ErrorMessage="Please Select your specialisation"
                     Text="<div class='alert-danger'><strong>*</strong></div>"
                     CssClass="alert-text" 
                     SetFocusOnError="True" 
