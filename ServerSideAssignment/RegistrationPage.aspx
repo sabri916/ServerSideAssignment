@@ -27,26 +27,26 @@
 
                 <div class="form-group">        
                     <asp:Label ID="student_id_label" runat="server" Text="Student ID"></asp:Label>
-                    <asp:TextBox class="form-control" MaxLength="3" ID="student_id_box" runat="server"></asp:TextBox>
+                    <asp:TextBox class="form-control" ID="student_id_box" runat="server"></asp:TextBox>
                     <br />
                 </div>
              
 
                 <div class="form-group">
                     <asp:Label ID="password_label" runat="server" Text="Password"></asp:Label>
-                    <asp:TextBox class="form-control" ID="password_box" runat="server"></asp:TextBox>
+                    <asp:TextBox class="form-control" ID="password_box" runat="server" TextMode="Password"></asp:TextBox>
                     <br />
                 </div> 
 
                 <div class="form-group">
                     <asp:Label ID="password_label2" runat="server" Text="Verify Password"></asp:Label>
-                    <asp:TextBox class="form-control" ID="password_box2" runat="server"></asp:TextBox>
+                    <asp:TextBox class="form-control" ID="password_box2" runat="server" TextMode="Password"></asp:TextBox>
                     <br />
                 </div> 
 
                 <div class="form-group">
                     <asp:Label ID="email_label" runat="server" Text="Email"></asp:Label>
-                    <asp:TextBox class="form-control" ID="Email" runat="server"></asp:TextBox>
+                    <asp:TextBox class="form-control" ID="Email" runat="server" TextMode="Email"></asp:TextBox>
                     <br />
                 </div> 
 
