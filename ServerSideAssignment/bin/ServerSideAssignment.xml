@@ -125,5 +125,275 @@ To modify move field declaration from designer file to code-behind file.
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="F:ServerSideAssignment.RegistrationPage._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._registration_validation_summary">
+<summary>
+registration_validation_summary control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._student_id_label">
+<summary>
+student_id_label control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._student_id_box">
+<summary>
+student_id_box control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._student_id_required_validator">
+<summary>
+student_id_required_validator control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._first_name_label">
+<summary>
+first_name_label control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._first_name_box">
+<summary>
+first_name_box control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._first_name_validator">
+<summary>
+first_name_validator control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._last_name_label">
+<summary>
+last_name_label control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._last_name_box">
+<summary>
+last_name_box control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._last_name_validator">
+<summary>
+last_name_validator control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._password_required_validator">
+<summary>
+password_required_validator control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._password_box">
+<summary>
+password_box control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._student_id_validator">
+<summary>
+student_id_validator control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._password_label2">
+<summary>
+password_label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._password_box2">
+<summary>
+password_box2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._password2_required_validator">
+<summary>
+password2_required_validator control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._password_comapre_validator">
+<summary>
+password_comapre_validator control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._email_label">
+<summary>
+email_label control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._email_box">
+<summary>
+email_box control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._email_required_validator">
+<summary>
+email_required_validator control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._CompareValidator1">
+<summary>
+CompareValidator1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._gender_label">
+<summary>
+gender_label control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._gender_list">
+<summary>
+gender_list control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._calendar_label">
+<summary>
+calendar_label control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._dob_calendar">
+<summary>
+dob_calendar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._specialisation_label">
+<summary>
+specialisation_label control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._specialisation_list">
+<summary>
+specialisation_list control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._specialisation_required_validator">
+<summary>
+specialisation_required_validator control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.RegistrationPage._register_button">
+<summary>
+register_button control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 </members>
 </doc>
