@@ -42,6 +42,36 @@
                     </asp:RequiredFieldValidator>
                     <br />
                 </div>
+
+                <div class="form-group">
+                    <asp:Label ID="first_name_label" runat="server" Text="First Name:"></asp:Label>
+                    <asp:TextBox class="form-control" ID="first_name_box" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator
+                        ID="first_name_validator"
+                        ControlToValidate="first_name_box"
+                        runat="server"
+                        ErrorMessage="Please enter first name"
+                        Text="<div class='alert-danger'><strong>*</strong></div>"
+                        SetFocusOnError="True"
+                        Display="Dynamic">
+                    </asp:RequiredFieldValidator>
+                    <br />
+                </div>
+
+                 <div class="form-group">
+                    <asp:Label ID="last_name_label" runat="server" Text="Last Name:"></asp:Label>
+                    <asp:TextBox class="form-control" ID="last_name_box" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator
+                        ID="last_name_validator"
+                        ControlToValidate="last_name_box"
+                        runat="server"
+                        ErrorMessage="Please enter last name."
+                        Text="<div class='alert-danger'><strong>*</strong></div>"
+                        SetFocusOnError="True"
+                        Display="Dynamic">
+                    </asp:RequiredFieldValidator>
+                    <br />
+                </div>
              
 
                 <div class="form-group">
@@ -107,6 +137,27 @@
                     </asp:CompareValidator>
                     <br />
                 </div> 
+
+                <asp:Label ID="gender_label" runat="server" Text="gender"></asp:Label><br />
+                <asp:RadioButtonList ID="gender_list" runat="server">
+                    <asp:ListItem Text="Male"></asp:ListItem>
+                    <asp:ListItem Text="Female"></asp:ListItem>
+                </asp:RadioButtonList>
+
+                <br />
+                <asp:Label ID="calendar_label" runat="server" Text="Date of Birth"></asp:Label>
+                <asp:Calendar ID="dob_calendar" runat="server" BackColor="White" BorderColor="#999999" CellPadding="4" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" Height="180px" Width="200px">
+                    <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" />
+                    <NextPrevStyle VerticalAlign="Bottom" />
+                    <OtherMonthDayStyle ForeColor="#808080" />
+                    <SelectedDayStyle BackColor="#666666" Font-Bold="True" ForeColor="White" />
+                    <SelectorStyle BackColor="#CCCCCC" />
+                    <TitleStyle BackColor="#999999" BorderColor="Black" Font-Bold="True" />
+                    <TodayDayStyle BackColor="#CCCCCC" ForeColor="Black" />
+                    <WeekendDayStyle BackColor="#FFFFCC" />
+                </asp:Calendar>
+
+                <br />
 
                 <div class="form-group">
                     <asp:Label ID="specialisation_label" runat="server" Text="Specialisation"></asp:Label>
