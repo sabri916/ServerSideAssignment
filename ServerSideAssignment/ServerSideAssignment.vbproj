@@ -92,11 +92,20 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminExamManagement.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="RegistrationPage.aspx" />
+    <Content Include="StudentListAdmin.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminExamManagement.aspx.designer.vb">
+      <DependentUpon>AdminExamManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminExamManagement.aspx.vb">
+      <DependentUpon>AdminExamManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Home.aspx.designer.vb">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
@@ -129,6 +138,13 @@
     <Compile Include="RegistrationPage.aspx.vb">
       <DependentUpon>RegistrationPage.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="StudentListAdmin.aspx.designer.vb">
+      <DependentUpon>StudentListAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentListAdmin.aspx.vb">
+      <DependentUpon>StudentListAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

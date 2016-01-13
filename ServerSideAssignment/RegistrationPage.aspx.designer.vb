@@ -32,33 +32,6 @@ Partial Public Class RegistrationPage
     Protected WithEvents registration_validation_summary As Global.System.Web.UI.WebControls.ValidationSummary
     
     '''<summary>
-    '''student_id_label control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents student_id_label As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''student_id_box control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents student_id_box As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''student_id_required_validator control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents student_id_required_validator As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
-    '''<summary>
     '''first_name_label control.
     '''</summary>
     '''<remarks>

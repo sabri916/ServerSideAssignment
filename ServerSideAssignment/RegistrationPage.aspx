@@ -18,6 +18,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!---end bootstrap-->
     <title>Registration Page - Exam Registration System</title>
+
+    <script runat="server">
+        Sub DaySelect(obj As Object, e As DayRenderEventArgs)
+            If e.Day.IsSelected Then
+                Response.Write(e.Day.Date.Year.ToString + "-" + e.Day.Date.Month.ToString + "-" + e.Day.Date.Date.ToString("YYYY-MM-DD"))
+                Response.Write("----------")
+                Response.Write(e.Day.Date.ToString("yyyy-MM-dd"))
+            End If
+        End Sub
+
+    </script>
     
 </head>
 <body>
@@ -27,21 +38,6 @@
                 <asp:ValidationSummary CssClass="alert alert-danger" ID="registration_validation_summary" DisplayMode="BulletList" runat="server" />
 
                 <br />
-
-                <div class="form-group">        
-                    <asp:Label ID="student_id_label" runat="server" Text="Student ID"></asp:Label>
-                    <asp:TextBox class="form-control" ID="student_id_box" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator
-                        ID="student_id_required_validator"
-                        ControlToValidate="student_id_box"
-                        runat="server"
-                        ErrorMessage="Please enter Student ID"
-                        Text="<div class='alert-danger'><strong>*</strong></div>"
-                        SetFocusOnError="True"
-                        Display="Dynamic">
-                    </asp:RequiredFieldValidator>
-                    <br />
-                </div>
 
                 <div class="form-group">
                     <asp:Label ID="first_name_label" runat="server" Text="First Name:"></asp:Label>
@@ -140,13 +136,13 @@
 
                 <asp:Label ID="gender_label" runat="server" Text="gender"></asp:Label><br />
                 <asp:RadioButtonList ID="gender_list" runat="server">
-                    <asp:ListItem Text="Male"></asp:ListItem>
-                    <asp:ListItem Text="Female"></asp:ListItem>
+                    <asp:ListItem value="M" Text="Male"></asp:ListItem>
+                    <asp:ListItem value="F" Text="Female"></asp:ListItem>
                 </asp:RadioButtonList>
 
                 <br />
                 <asp:Label ID="calendar_label" runat="server" Text="Date of Birth"></asp:Label>
-                <asp:Calendar ID="dob_calendar" runat="server" BackColor="White" BorderColor="#999999" CellPadding="4" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" Height="180px" Width="200px">
+                <asp:Calendar OnDayRender="DaySelect" ID="dob_calendar" runat="server" BackColor="White" BorderColor="#999999" CellPadding="4" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" Height="180px" Width="200px">
                     <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" />
                     <NextPrevStyle VerticalAlign="Bottom" />
                     <OtherMonthDayStyle ForeColor="#808080" />
@@ -163,12 +159,13 @@
                     <asp:Label ID="specialisation_label" runat="server" Text="Specialisation"></asp:Label>
                     <asp:DropDownList class="form-control" ID="specialisation_list" runat="server">
                         <asp:ListItem Text="Specialisation" Value="0"></asp:ListItem>
-                        <asp:ListItem Text="Computer Science" Value="1"></asp:ListItem>
-                        <asp:ListItem Text="Information Systems" Value="2"></asp:ListItem>
-                        <asp:ListItem Text="Multimedia" Value="3"></asp:ListItem>
+                        <asp:ListItem Text="Computer Science" Value="Computer Science"></asp:ListItem>
+                        <asp:ListItem Text="Information Systems" Value="Information Systems"></asp:ListItem>
+                        <asp:ListItem Text="Multimedia" Value="Multimedia"></asp:ListItem>
                     </asp:DropDownList>
                     <asp:RequiredFieldValidator
                     ID="specialisation_required_validator"
+                    InitialValue="0"
                     ControlToValidate="specialisation_list" 
                     runat="server" 
                     ErrorMessage="Please Select your specialisation"

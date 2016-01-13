@@ -6,6 +6,168 @@ ServerSideAssignment
 </name>
 </assembly>
 <members>
+<member name="F:ServerSideAssignment.AdminExamManagement._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._exam_code_label">
+<summary>
+exam_code_label control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._exam_code_box">
+<summary>
+exam_code_box control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._exam_code_validator">
+<summary>
+exam_code_validator control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._exam_title_label">
+<summary>
+exam_title_label control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._exam_title_box">
+<summary>
+exam_title_box control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._exam_title_validator">
+<summary>
+exam_title_validator control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._exam_description_label">
+<summary>
+exam_description_label control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._date_label">
+<summary>
+date_label control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._exam_calendar">
+<summary>
+exam_calendar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._exam_time">
+<summary>
+exam_time control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._hour_dropdown">
+<summary>
+hour_dropdown control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._hour_dropdown_validator">
+<summary>
+hour_dropdown_validator control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._minutes_dropdown">
+<summary>
+minutes_dropdown control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._minutes_dropdown_validator">
+<summary>
+minutes_dropdown_validator control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._add_exam_button">
+<summary>
+add_exam_button control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._GridView1">
+<summary>
+GridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._SqlDataSource1">
+<summary>
+SqlDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:ServerSideAssignment.Home._login_form">
 <summary>
 login_form control.
@@ -137,33 +299,6 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:ServerSideAssignment.RegistrationPage._registration_validation_summary">
 <summary>
 registration_validation_summary control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ServerSideAssignment.RegistrationPage._student_id_label">
-<summary>
-student_id_label control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ServerSideAssignment.RegistrationPage._student_id_box">
-<summary>
-student_id_box control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:ServerSideAssignment.RegistrationPage._student_id_required_validator">
-<summary>
-student_id_required_validator control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -389,6 +524,33 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:ServerSideAssignment.RegistrationPage._register_button">
 <summary>
 register_button control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.StudentListAdmin._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.StudentListAdmin._StudentGridView">
+<summary>
+StudentGridView control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.StudentListAdmin._SqlDataSource1">
+<summary>
+SqlDataSource1 control.
 </summary>
 <remarks>
 Auto-generated field.

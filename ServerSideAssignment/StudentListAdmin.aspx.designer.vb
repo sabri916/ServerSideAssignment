@@ -23,13 +23,13 @@ Partial Public Class StudentListAdmin
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
     
     '''<summary>
-    '''student_list_grid control.
+    '''StudentGridView control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents student_list_grid As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents StudentGridView As Global.System.Web.UI.WebControls.GridView
     
     '''<summary>
     '''SqlDataSource1 control.
