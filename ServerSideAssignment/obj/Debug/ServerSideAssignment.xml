@@ -78,6 +78,42 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:ServerSideAssignment.AdminExamManagement._exam_description_area">
+<summary>
+exam_description_area control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._specialisation_label">
+<summary>
+specialisation_label control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._specialisation_list">
+<summary>
+specialisation_list control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._specialisation_required_validator">
+<summary>
+specialisation_required_validator control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:ServerSideAssignment.AdminExamManagement._date_label">
 <summary>
 date_label control.
@@ -135,6 +171,33 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:ServerSideAssignment.AdminExamManagement._minutes_dropdown_validator">
 <summary>
 minutes_dropdown_validator control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._duration_label">
+<summary>
+duration_label control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._duration_box">
+<summary>
+duration_box control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminExamManagement._duration_box_validator">
+<summary>
+duration_box_validator control.
 </summary>
 <remarks>
 Auto-generated field.

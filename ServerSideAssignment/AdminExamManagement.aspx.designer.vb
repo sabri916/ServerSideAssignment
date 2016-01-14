@@ -86,6 +86,42 @@ Partial Public Class AdminExamManagement
     Protected WithEvents exam_description_label As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
+    '''exam_description_area control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents exam_description_area As Global.System.Web.UI.HtmlControls.HtmlTextArea
+    
+    '''<summary>
+    '''specialisation_label control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents specialisation_label As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''specialisation_list control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents specialisation_list As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''specialisation_required_validator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents specialisation_required_validator As Global.System.Web.UI.WebControls.RequiredFieldValidator
+    
+    '''<summary>
     '''date_label control.
     '''</summary>
     '''<remarks>
@@ -147,6 +183,33 @@ Partial Public Class AdminExamManagement
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents minutes_dropdown_validator As Global.System.Web.UI.WebControls.RequiredFieldValidator
+    
+    '''<summary>
+    '''duration_label control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents duration_label As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''duration_box control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents duration_box As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''duration_box_validator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents duration_box_validator As Global.System.Web.UI.WebControls.RequiredFieldValidator
     
     '''<summary>
     '''add_exam_button control.
