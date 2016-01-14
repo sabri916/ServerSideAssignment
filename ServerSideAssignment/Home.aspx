@@ -45,14 +45,14 @@
                             <!-- Login form here -->
                             <form role="form" id="login_form" runat="server" class="form-group">
                                 <div class="form-group">
-                                    <asp:Label ID="student_id_label" runat="server" Text="Student ID"></asp:Label>
-                                    <asp:TextBox ID="student_id_box" runat="server" class="form-control"></asp:TextBox>
+                                    <asp:Label ID="email_label" runat="server" Text="Email"></asp:Label>
+                                    <asp:TextBox ID="email_box" runat="server" class="form-control"></asp:TextBox>
                                     <div class="alert-danger">
                                         <asp:RequiredFieldValidator
-                                        ID="student_id_validator"
-                                        ControlToValidate="student_id_box" 
+                                        ID="email_box_validator"
+                                        ControlToValidate="email_box" 
                                         runat="server" 
-                                        ErrorMessage="Please enter username<br />"
+                                        ErrorMessage="Please enter email"
                                         CssClass="alert-text" 
                                         SetFocusOnError="True" 
                                         Display = "Dynamic">

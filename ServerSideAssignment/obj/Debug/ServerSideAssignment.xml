@@ -240,27 +240,27 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ServerSideAssignment.Home._student_id_label">
+<member name="F:ServerSideAssignment.Home._email_label">
 <summary>
-student_id_label control.
+email_label control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ServerSideAssignment.Home._student_id_box">
+<member name="F:ServerSideAssignment.Home._email_box">
 <summary>
-student_id_box control.
+email_box control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ServerSideAssignment.Home._student_id_validator">
+<member name="F:ServerSideAssignment.Home._email_box_validator">
 <summary>
-student_id_validator control.
+email_box_validator control.
 </summary>
 <remarks>
 Auto-generated field.

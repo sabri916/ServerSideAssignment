@@ -23,31 +23,31 @@ Partial Public Class Home
     Protected WithEvents login_form As Global.System.Web.UI.HtmlControls.HtmlForm
     
     '''<summary>
-    '''student_id_label control.
+    '''email_label control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents student_id_label As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents email_label As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''student_id_box control.
+    '''email_box control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents student_id_box As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents email_box As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''student_id_validator control.
+    '''email_box_validator control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents student_id_validator As Global.System.Web.UI.WebControls.RequiredFieldValidator
+    Protected WithEvents email_box_validator As Global.System.Web.UI.WebControls.RequiredFieldValidator
     
     '''<summary>
     '''password_label control.
