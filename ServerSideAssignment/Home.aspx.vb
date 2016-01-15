@@ -17,9 +17,10 @@ Public Class Home
         Dim dt As New DataTable()
         da.Fill(dt)
         If dt.Rows.Count > 0 Then
-            Session("username") = "Sabri"
-            Dim specialisation As String = dt.Rows(0)("specialisation").ToString()
-            Response.Write(specialisation)
+            Session("first_name") = dt.Rows(0)("first_name").ToString()
+            Session("last_name") = dt.Rows(0)("last_name").ToString()
+            Session("email") = dt.Rows(0)("email").ToString()
+            Session("specialisation") = dt.Rows(0)("specialisation").ToString()
             'Response.Redirect("WebForm3.aspx")
             Response.Write("success")
         Else

@@ -10,4 +10,35 @@ date_of_birth date not null,
 specialisation varchar(32) not null
 );
 
-select * from 
+select * from students;
+insert into students values(
+'Sabri',
+'K',
+'s',
+'sbrkrs@gmail.com',
+'M',
+'1991-04-10',
+'Computer Science'
+);
+
+create table exams(
+exam_code varchar(16) primary key,
+exam_title varchar(64) not null,
+exam_description varchar(MAX),
+exam_specialisation varchar(32) not null,
+e_date date not null,
+e_time time not null,
+duration int not null
+);
+
+select * from exams;
+
+
+insert into exams values(
+'cm0a','blue','oawiejhfpoawehfoajweo','Computer Science','2016-01-27','17:15:00',3
+);
+
+create table registered_exam(
+email varchar(64) references students(email),
+exam_code varchar(16) references exams(exam_code)
+);

@@ -94,7 +94,9 @@
   <ItemGroup>
     <Content Include="AdminExamManagement.aspx" />
     <Content Include="Home.aspx" />
+    <Content Include="Profile.aspx" />
     <Content Include="RegistrationPage.aspx" />
+    <Content Include="studentExamRegistration.aspx" />
     <Content Include="StudentListAdmin.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -132,11 +134,25 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Profile.aspx.designer.vb">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.aspx.vb">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="RegistrationPage.aspx.designer.vb">
       <DependentUpon>RegistrationPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="RegistrationPage.aspx.vb">
       <DependentUpon>RegistrationPage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="studentExamRegistration.aspx.designer.vb">
+      <DependentUpon>studentExamRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="studentExamRegistration.aspx.vb">
+      <DependentUpon>studentExamRegistration.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="StudentListAdmin.aspx.designer.vb">
