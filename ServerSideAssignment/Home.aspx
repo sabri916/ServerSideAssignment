@@ -40,13 +40,13 @@
                     <li><a href="#"><span class="glyphicon glyphicon-user"></span> New User</a></li>
                     <li class="dropdown">
 
-                        <a class="dropdown-toggle" href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> Login <strong class="caret"></strong></a></a>
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> Login <strong class="caret"></strong></a>
                         <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px; width:20em">
                             <!-- Login form here -->
                             <form role="form" id="login_form" runat="server" class="form-group">
                                 <div class="form-group">
                                     <asp:Label ID="email_label" runat="server" Text="Email"></asp:Label>
-                                    <asp:TextBox ID="email_box" runat="server" class="form-control"></asp:TextBox>
+                                    <asp:TextBox ID="email_box" runat="server" CssClass ="form-control"></asp:TextBox>
                                     <div class="alert-danger">
                                         <asp:RequiredFieldValidator
                                         ID="email_box_validator"
@@ -60,7 +60,7 @@
                                     </div>  
                                     <br />
                                     <asp:Label ID="password_label" runat="server" Text="Password"></asp:Label>
-                                    <asp:TextBox ID="password_box" runat="server" TextMode="Password" class="form-control"></asp:TextBox>
+                                    <asp:TextBox ID="password_box" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox>
                                     <div class="alert-danger">
                                         <asp:RequiredFieldValidator
                                         ID="password_validator"
@@ -73,7 +73,7 @@
                                         </asp:RequiredFieldValidator>
                                     </div>
                                     <br />
-                                    <asp:Button ID="login_button" runat="server" Text="Login" class="btn btn-primary" />
+                                    <asp:Button ID="login_button" runat="server" Text="Login" CssClass="btn btn-primary" />
                                 </div>
                             </form>
                         </div>
