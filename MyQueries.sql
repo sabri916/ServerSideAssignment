@@ -42,3 +42,9 @@ create table registered_exam(
 email varchar(64) references students(email),
 exam_code varchar(16) references exams(exam_code)
 );
+
+
+insert into registered_exam values('sbrkrs@gmail.com','a');
+delete from registered_exam where exam_code = 'cm0a';
+select * from registered_exam;
+select count(*) from registered_exam where email='sbrkrs@gmail.com' and exam_code='cm0a'
