@@ -377,6 +377,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:ServerSideAssignment.Profile._logout_link">
+<summary>
+logout_link control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:ServerSideAssignment.Profile._GridView1">
 <summary>
 GridView1 control.

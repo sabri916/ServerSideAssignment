@@ -22,7 +22,7 @@ Public Class Home
             Session("email") = dt.Rows(0)("email").ToString()
             Session("specialisation") = dt.Rows(0)("specialisation").ToString()
             'Response.Redirect("WebForm3.aspx")
-            Response.Write("success")
+            Response.Redirect("Profile.aspx")
         Else
             Response.Write("invalid user name and password")
         End If

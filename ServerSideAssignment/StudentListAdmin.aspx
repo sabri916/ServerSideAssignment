@@ -20,7 +20,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+    <div class="table-hover">
         <asp:GridView ID="StudentGridView" runat="server" AutoGenerateColumns="False" DataKeyNames="email" DataSourceID="SqlDataSource1" AllowSorting="True">
             <Columns>
                 <asp:CommandField ShowEditButton="True" ShowDeleteButton="True"></asp:CommandField>

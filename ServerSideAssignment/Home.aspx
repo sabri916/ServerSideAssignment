@@ -37,50 +37,50 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="divider-vertical"></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> New User</a></li>
-                    <li class="dropdown">
-
-                        <a class="dropdown-toggle" href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> Login <strong class="caret"></strong></a>
-                        <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px; width:20em">
-                            <!-- Login form here -->
-                            <form role="form" id="login_form" runat="server" class="form-group">
-                                <div class="form-group">
-                                    <asp:Label ID="email_label" runat="server" Text="Email"></asp:Label>
-                                    <asp:TextBox ID="email_box" runat="server" CssClass ="form-control"></asp:TextBox>
-                                    <div class="alert-danger">
-                                        <asp:RequiredFieldValidator
-                                        ID="email_box_validator"
-                                        ControlToValidate="email_box" 
-                                        runat="server" 
-                                        ErrorMessage="Please enter email"
-                                        CssClass="alert-text" 
-                                        SetFocusOnError="True" 
-                                        Display = "Dynamic">
-                                        </asp:RequiredFieldValidator>
-                                    </div>  
-                                    <br />
-                                    <asp:Label ID="password_label" runat="server" Text="Password"></asp:Label>
-                                    <asp:TextBox ID="password_box" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox>
-                                    <div class="alert-danger">
-                                        <asp:RequiredFieldValidator
-                                        ID="password_validator"
-                                        ControlToValidate="password_box"
-                                        runat="server" 
-                                        ErrorMessage="Please enter password<br />"
-                                        CssClass="alert-text" 
-                                        SetFocusOnError="True" 
-                                        Display = "Dynamic">
-                                        </asp:RequiredFieldValidator>
-                                    </div>
-                                    <br />
-                                    <asp:Button ID="login_button" runat="server" Text="Login" CssClass="btn btn-primary" />
-                                </div>
-                            </form>
-                        </div>
-                    </li>
+                    <li><a href="RegistrationPage.aspx"><span class="glyphicon glyphicon-user"></span> New User</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div class ="row">
+        <div class ="col-md-3"></div>
+        <div class ="col-md-3">
+            <!-- Login form here -->
+            <form role="form" id="login_form" runat="server" class="form-group">
+                <div class="form-group">
+                    <asp:Label ID="email_label" runat="server" Text="Email"></asp:Label>
+                    <asp:TextBox ID="email_box" runat="server" CssClass ="form-control"></asp:TextBox>
+                    <div class="alert-danger">
+                        <asp:RequiredFieldValidator
+                        ID="email_box_validator"
+                        ControlToValidate="email_box" 
+                        runat="server" 
+                        ErrorMessage="Please enter email"
+                        CssClass="alert-text" 
+                        SetFocusOnError="True" 
+                        Display = "Dynamic">
+                        </asp:RequiredFieldValidator>
+                    </div>  
+                    <br />
+                    <asp:Label ID="password_label" runat="server" Text="Password"></asp:Label>
+                    <asp:TextBox ID="password_box" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox>
+                    <div class="alert-danger">
+                        <asp:RequiredFieldValidator
+                        ID="password_validator"
+                        ControlToValidate="password_box"
+                        runat="server" 
+                        ErrorMessage="Please enter password<br />"
+                        CssClass="alert-text" 
+                        SetFocusOnError="True" 
+                        Display = "Dynamic">
+                        </asp:RequiredFieldValidator>
+                    </div>
+                    <br />
+                    <asp:Button ID="login_button" runat="server" Text="Login" CssClass="btn btn-primary" />
+                </div>
+            </form>
+           </div>
+        <div class="col-md-3"></div>
+    </div>
 </body>
 </html>

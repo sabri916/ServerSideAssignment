@@ -23,6 +23,15 @@ Partial Public Class MyExams
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
     
     '''<summary>
+    '''logout_link control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents logout_link As Global.System.Web.UI.HtmlControls.HtmlAnchor
+    
+    '''<summary>
     '''GridView1 control.
     '''</summary>
     '''<remarks>

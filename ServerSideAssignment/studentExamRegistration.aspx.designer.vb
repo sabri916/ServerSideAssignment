@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class studentExamRegistration
     
     '''<summary>
+    '''logout_link control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents logout_link As Global.System.Web.UI.HtmlControls.HtmlAnchor
+    
+    '''<summary>
     '''form1 control.
     '''</summary>
     '''<remarks>
