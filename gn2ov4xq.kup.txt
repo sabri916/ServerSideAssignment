@@ -1,0 +1,15 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch emailRegistrationValidation
+# Changes to be committed:
+#	modified:   ServerSideAssignment/RegistrationPage.aspx
+#	modified:   ServerSideAssignment/RegistrationPage.aspx.designer.vb
+#	modified:   ServerSideAssignment/bin/ServerSideAssignment.dll
+#	modified:   ServerSideAssignment/bin/ServerSideAssignment.pdb
+#	modified:   ServerSideAssignment/bin/ServerSideAssignment.xml
+#	modified:   ServerSideAssignment/obj/Debug/ServerSideAssignment.dll
+#	modified:   ServerSideAssignment/obj/Debug/ServerSideAssignment.pdb
+#	modified:   ServerSideAssignment/obj/Debug/ServerSideAssignment.xml
+#
+

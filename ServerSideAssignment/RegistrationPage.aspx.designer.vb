@@ -86,13 +86,13 @@ Partial Public Class RegistrationPage
     Protected WithEvents last_name_validator As Global.System.Web.UI.WebControls.RequiredFieldValidator
     
     '''<summary>
-    '''password_required_validator control.
+    '''password_label control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents password_required_validator As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents password_label As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''password_box control.
@@ -104,13 +104,13 @@ Partial Public Class RegistrationPage
     Protected WithEvents password_box As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''student_id_validator control.
+    '''password_validator control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents student_id_validator As Global.System.Web.UI.WebControls.RequiredFieldValidator
+    Protected WithEvents password_validator As Global.System.Web.UI.WebControls.RequiredFieldValidator
     
     '''<summary>
     '''password_label2 control.
@@ -174,15 +174,6 @@ Partial Public Class RegistrationPage
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents email_required_validator As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
-    '''<summary>
-    '''CompareValidator1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents CompareValidator1 As Global.System.Web.UI.WebControls.CompareValidator
     
     '''<summary>
     '''gender_label control.

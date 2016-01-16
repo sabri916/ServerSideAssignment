@@ -51,7 +51,6 @@
                         SetFocusOnError="True"
                         Display="Dynamic">
                     </asp:RequiredFieldValidator>
-                    <br />
                 </div>
 
                  <div class="form-group">
@@ -66,15 +65,14 @@
                         SetFocusOnError="True"
                         Display="Dynamic">
                     </asp:RequiredFieldValidator>
-                    <br />
                 </div>
              
 
                 <div class="form-group">
-                    <asp:Label ID="password_required_validator" runat="server" Text="Password"></asp:Label>
+                    <asp:Label ID="password_label" runat="server" Text="Password"></asp:Label>
                     <asp:TextBox class="form-control" ID="password_box" runat="server" TextMode="Password"></asp:TextBox>
                     <asp:RequiredFieldValidator
-                    ID="student_id_validator"
+                    ID="password_validator"
                     ControlToValidate="password_box" 
                     runat="server" 
                     ErrorMessage="Please enter password"
@@ -83,7 +81,6 @@
                     SetFocusOnError="True" 
                     Display = "Dynamic">
                     </asp:RequiredFieldValidator>
-                    <br />
                 </div> 
 
                 <div class="form-group">
@@ -108,7 +105,6 @@
                     ControlToValidate="password_box2"
                     ErrorMessage="CompareValidator">
                     </asp:CompareValidator>
-                    <br />
                 </div> 
 
                 <div class="form-group">
@@ -124,14 +120,6 @@
                     SetFocusOnError="True" 
                     Display = "Dynamic">
                     </asp:RequiredFieldValidator>
-                    <asp:CompareValidator
-                    ID="CompareValidator1"
-                    runat="server"
-                    ControlToCompare="password_box"
-                    ControlToValidate="password_box2"
-                    ErrorMessage="CompareValidator">
-                    </asp:CompareValidator>
-                    <br />
                 </div> 
 
                 <asp:Label ID="gender_label" runat="server" Text="gender"></asp:Label><br />
@@ -140,7 +128,6 @@
                     <asp:ListItem value="F" Text="Female"></asp:ListItem>
                 </asp:RadioButtonList>
 
-                <br />
                 <asp:Label ID="calendar_label" runat="server" Text="Date of Birth"></asp:Label>
                 <asp:Calendar OnDayRender="DaySelect" ID="dob_calendar" runat="server" BackColor="White" BorderColor="#999999" CellPadding="4" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" Height="180px" Width="200px">
                     <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" />
@@ -152,8 +139,6 @@
                     <TodayDayStyle BackColor="#CCCCCC" ForeColor="Black" />
                     <WeekendDayStyle BackColor="#FFFFCC" />
                 </asp:Calendar>
-
-                <br />
 
                 <div class="form-group">
                     <asp:Label ID="specialisation_label" runat="server" Text="Specialisation"></asp:Label>
@@ -174,7 +159,7 @@
                     SetFocusOnError="True" 
                     Display = "Dynamic">
                     </asp:RequiredFieldValidator>
-                    <br />
+
                 </div> 
 
                 <asp:Button class="btn btn-primary" ID="register_button" runat="server" Text="Register" />
