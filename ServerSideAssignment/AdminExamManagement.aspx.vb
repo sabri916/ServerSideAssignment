@@ -4,7 +4,9 @@ Public Class AdminExamManagement
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
+        If Session("email") <> "admin@college.com" Then
+            Response.Redirect("Home.aspx")
+        End If
     End Sub
 
     Private Function Add_Exam(code As String, title As String, description As String, specialisation As String, hours As String, minutes As String, duration As String) As Integer
