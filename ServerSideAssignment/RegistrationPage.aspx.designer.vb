@@ -176,6 +176,15 @@ Partial Public Class RegistrationPage
     Protected WithEvents email_required_validator As Global.System.Web.UI.WebControls.RequiredFieldValidator
     
     '''<summary>
+    '''email_custom_validation control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents email_custom_validation As Global.System.Web.UI.WebControls.CustomValidator
+    
+    '''<summary>
     '''gender_label control.
     '''</summary>
     '''<remarks>

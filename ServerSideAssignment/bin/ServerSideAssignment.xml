@@ -557,6 +557,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:ServerSideAssignment.RegistrationPage._email_custom_validation">
+<summary>
+email_custom_validation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:ServerSideAssignment.RegistrationPage._gender_label">
 <summary>
 gender_label control.

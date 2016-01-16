@@ -18,17 +18,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!---end bootstrap-->
     <title>Registration Page - Exam Registration System</title>
-
-    <script runat="server">
-        Sub DaySelect(obj As Object, e As DayRenderEventArgs)
-            If e.Day.IsSelected Then
-                Response.Write(e.Day.Date.Year.ToString + "-" + e.Day.Date.Month.ToString + "-" + e.Day.Date.Date.ToString("YYYY-MM-DD"))
-                Response.Write("----------")
-                Response.Write(e.Day.Date.ToString("yyyy-MM-dd"))
-            End If
-        End Sub
-
-    </script>
     
 </head>
 <body>
@@ -45,6 +34,7 @@
                     <asp:RequiredFieldValidator
                         ID="first_name_validator"
                         ControlToValidate="first_name_box"
+                        ValidationGroup="student_registration_validation_group"
                         runat="server"
                         ErrorMessage="Please enter first name"
                         Text="<div class='alert-danger'><strong>*</strong></div>"
@@ -59,6 +49,7 @@
                     <asp:RequiredFieldValidator
                         ID="last_name_validator"
                         ControlToValidate="last_name_box"
+                        ValidationGroup="student_registration_validation_group"
                         runat="server"
                         ErrorMessage="Please enter last name."
                         Text="<div class='alert-danger'><strong>*</strong></div>"
@@ -73,7 +64,8 @@
                     <asp:TextBox class="form-control" ID="password_box" runat="server" TextMode="Password"></asp:TextBox>
                     <asp:RequiredFieldValidator
                     ID="password_validator"
-                    ControlToValidate="password_box" 
+                    ControlToValidate="password_box"
+                    ValidationGroup="student_registration_validation_group"
                     runat="server" 
                     ErrorMessage="Please enter password"
                     Text ="<div class='alert-danger'><strong>*</strong></div>"
@@ -88,7 +80,8 @@
                     <asp:TextBox class="form-control" ID="password_box2" runat="server" TextMode="Password"></asp:TextBox>
                     <asp:RequiredFieldValidator
                     ID="password2_required_validator"
-                    ControlToValidate="password_box2" 
+                    ControlToValidate="password_box2"
+                    ValidationGroup="student_registration_validation_group"
                     runat="server" 
                     ErrorMessage="Please enter Password"
                     Text="<div class='alert-danger'><strong>*</strong></div>"
@@ -112,7 +105,8 @@
                     <asp:TextBox class="form-control" ID="email_box" runat="server" TextMode="Email"></asp:TextBox>
                     <asp:RequiredFieldValidator
                     ID="email_required_validator"
-                    ControlToValidate="email_box" 
+                    ControlToValidate="email_box"
+                    ValidationGroup="student_registration_validation_group"
                     runat="server" 
                     ErrorMessage="Please enter email"
                     Text="<div class='alert-danger'><strong>*</strong></div>"
@@ -120,6 +114,18 @@
                     SetFocusOnError="True" 
                     Display = "Dynamic">
                     </asp:RequiredFieldValidator>
+                    <asp:CustomValidator
+                        ID="email_custom_validation"
+                        ControlToValidate="email_box"
+                        ValidationGroup="student_registration_validation_group"
+                        runat="server"
+                        ErrorMessage="CustomValidator"
+                        Text="<div class='alert-danger'><strong>*</strong></div>"
+                        CssClass="alert-text" 
+                        SetFocusOnError="True" 
+                        Display = "Dynamic"
+                        OnServerValidate ="Validate_Email_Existance">
+                        </asp:CustomValidator>
                 </div> 
 
                 <asp:Label ID="gender_label" runat="server" Text="gender"></asp:Label><br />
@@ -129,7 +135,7 @@
                 </asp:RadioButtonList>
 
                 <asp:Label ID="calendar_label" runat="server" Text="Date of Birth"></asp:Label>
-                <asp:Calendar OnDayRender="DaySelect" ID="dob_calendar" runat="server" BackColor="White" BorderColor="#999999" CellPadding="4" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" Height="180px" Width="200px">
+                <asp:Calendar ID="dob_calendar" runat="server" BackColor="White" BorderColor="#999999" CellPadding="4" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" Height="180px" Width="200px">
                     <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" />
                     <NextPrevStyle VerticalAlign="Bottom" />
                     <OtherMonthDayStyle ForeColor="#808080" />
@@ -151,7 +157,8 @@
                     <asp:RequiredFieldValidator
                     ID="specialisation_required_validator"
                     InitialValue="0"
-                    ControlToValidate="specialisation_list" 
+                    ControlToValidate="specialisation_list"
+                    ValidationGroup="student_registration_validation_group"
                     runat="server" 
                     ErrorMessage="Please Select your specialisation"
                     Text="<div class='alert-danger'><strong>*</strong></div>"
@@ -162,7 +169,7 @@
 
                 </div> 
 
-                <asp:Button class="btn btn-primary" ID="register_button" runat="server" Text="Register" />
+                <asp:Button class="btn btn-primary" ID="register_button" runat="server" Text="Register" ValidationGroup="student_registration_validation_group" CausesValidation="true" OnClientClick="Validate_Email_Existance"/>
             </form>
         </div>
 </div>
