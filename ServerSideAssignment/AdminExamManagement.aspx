@@ -187,7 +187,7 @@
             </Columns>
         </asp:GridView>
 
-        <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:myConnectionString %>' SelectCommand="SELECT * FROM [exams]" DeleteCommand="DELETE FROM [exams] WHERE [exam_code] = @exam_code" InsertCommand="INSERT INTO [exams] ([exam_code], [exam_title], [exam_description], [exam_specialisation], [e_date], [e_time]) VALUES (@exam_code, @exam_title, @exam_description, @exam_specialisation, @e_date, @e_time)" UpdateCommand="UPDATE [exams] SET [exam_title] = @exam_title, [exam_description] = @exam_description, [exam_specialisation] = @exam_specialisation, [e_date] = @e_date, [e_time] = @e_time WHERE [exam_code] = @exam_code">
+        <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:myConnectionString %>' SelectCommand="SELECT * FROM [exams]" DeleteCommand="delete from registered_exam where exam_code = @exam_code;DELETE FROM [exams] WHERE [exam_code] = @exam_code" InsertCommand="INSERT INTO [exams] ([exam_code], [exam_title], [exam_description], [exam_specialisation], [e_date], [e_time]) VALUES (@exam_code, @exam_title, @exam_description, @exam_specialisation, @e_date, @e_time)" UpdateCommand="UPDATE [exams] SET [exam_title] = @exam_title, [exam_description] = @exam_description, [exam_specialisation] = @exam_specialisation, [e_date] = @e_date, [e_time] = @e_time WHERE [exam_code] = @exam_code">
             <DeleteParameters>
                 <asp:Parameter Name="exam_code" Type="String" />
             </DeleteParameters>
