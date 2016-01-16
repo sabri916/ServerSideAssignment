@@ -13,6 +13,8 @@ Public Class RegistrationPage
 
         sql_command.Connection = conn
 
+        'sql_command.CommandText = ""
+
         sql_command.CommandText = "insert into students values('" + first_name + "','" + last_name + "','" + password + "','" + email + "','" + gender + "','" + date_of_birth + "','" + specialisation + "')"
         sql_command.CommandType = CommandType.Text
 

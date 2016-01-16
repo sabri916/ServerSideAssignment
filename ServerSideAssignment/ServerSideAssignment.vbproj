@@ -94,6 +94,7 @@
   <ItemGroup>
     <Content Include="AdminExamManagement.aspx" />
     <Content Include="Home.aspx" />
+    <Content Include="MyExams.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="RegistrationPage.aspx" />
     <Content Include="studentExamRegistration.aspx" />
@@ -133,6 +134,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MyExams.aspx.designer.vb">
+      <DependentUpon>MyExams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyExams.aspx.vb">
+      <DependentUpon>MyExams.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Profile.aspx.designer.vb">
       <DependentUpon>Profile.aspx</DependentUpon>

@@ -48,3 +48,11 @@ insert into registered_exam values('sbrkrs@gmail.com','a');
 delete from registered_exam where exam_code = 'cm0a';
 select * from registered_exam;
 select count(*) from registered_exam where email='sbrkrs@gmail.com' and exam_code='cm0a'
+
+select exams.exam_code,exam_title, exam_description,exam_specialisation,e_date,e_time,duration from exams
+inner join registered_exam
+on exams.exam_code = registered_exam.exam_code
+where registered_exam.email = 'sbrkrs@gmail.com'
+
+IF EXISTS ( select * from students)
+	return 0 
