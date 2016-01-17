@@ -4,11 +4,15 @@ Public Class Home
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        If (Session("email") = "admin@college.com") Then
-            Response.Redirect("AdminProfile.aspx")
-        ElseIf (Session("email") <> Nothing) Then
-            Response.Redirect("Profile.aspx")
+        If Not Session.Item("email") Is Nothing Then
+            Dim email As String = Session.Item("email")
+            If (email.Equals("admin@college.com")) Then
+                Response.Redirect("AdminProfile.aspx")
+            ElseIf (Session("email") <> Nothing) Then
+                Response.Redirect("Home.aspx")
+            End If
         End If
+
     End Sub
 
     Private Sub Verify_Account(email As String, password As String)
@@ -25,10 +29,14 @@ Public Class Home
             Session("last_name") = dt.Rows(0)("last_name").ToString()
             Session("email") = dt.Rows(0)("email").ToString()
             Session("specialisation") = dt.Rows(0)("specialisation").ToString()
-            'Response.Redirect("WebForm3.aspx")
+
+            If dt.Rows(0)("email").ToString().Equals("admin@college.com") Then
+                Response.Redirect("adminProfile.aspx")
+            End If
+
             Response.Redirect("Profile.aspx")
-        Else
-            Response.Write("invalid user name and password")
+            Else
+                Response.Write("invalid user name and password")
         End If
 
     End Sub

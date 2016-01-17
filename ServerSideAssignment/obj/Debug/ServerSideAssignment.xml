@@ -15,6 +15,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:ServerSideAssignment.AdminExamManagement._logout_link">
+<summary>
+logout_link control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:ServerSideAssignment.AdminExamManagement._exam_code_label">
 <summary>
 exam_code_label control.
