@@ -35,39 +35,45 @@
                 </div>
                 <div>
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Profile</a></li>
+                        <li><a href="Profile.aspx">Profile</a></li>
                         <li class="active"><a href="MyExams.aspx">My Exams</a></li>
                         <li><a href="studentExamRegistration.aspx">Exam Registration</a></li> 
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="divider-vertical"></li>
-                        <li><a href="RegistrationPage.aspx">Rules & Regulations</a></li>
+                        <li><a href="Rules.aspx">Rules & Regulations</a></li>
                         <li class="divider-vertical"></li>
-                        <li><a id="logout_link" runat="server" onServerClick="logout">Logout</a></li>
+                        <li><a id="logout_link" runat="server" onServerClick="logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-    <div>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="exam_code" OnRowCommand="GridView1_RowCommand">
-            <Columns>
-                <asp:BoundField DataField="exam_code" HeaderText="Exam Code" ReadOnly="True" SortExpression="exam_code"></asp:BoundField>
-                <asp:BoundField DataField="exam_title" HeaderText="exam_title" SortExpression="exam_title"></asp:BoundField>
-                <asp:BoundField DataField="exam_description" HeaderText="exam_description" SortExpression="exam_description"></asp:BoundField>
-                <asp:BoundField DataField="exam_specialisation" HeaderText="exam_specialisation" SortExpression="exam_specialisation"></asp:BoundField>
-                <asp:BoundField DataField="e_date" HeaderText="e_date" SortExpression="e_date"></asp:BoundField>
-                <asp:BoundField DataField="e_time" HeaderText="e_time" SortExpression="e_time"></asp:BoundField>
-                <asp:BoundField DataField="duration" HeaderText="duration" SortExpression="duration"></asp:BoundField>
-                <asp:TemplateField>
-                    <ItemTemplate>
-                        <asp:Button ID="delete_registered_exams" runat="server"
-                            CommandName="deleteRegisteredExamCommand"
-                            CommandArgument="<%# CType(Container, GridViewRow).RowIndex %>"
-                            Text="Delete" />
-                    </ItemTemplate>
-                </asp:TemplateField>
-            </Columns>
-        </asp:GridView>
+    <div class="container">
+        <div class="row"
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="exam_code" OnRowCommand="GridView1_RowCommand">
+                    <Columns>
+                        <asp:BoundField DataField="exam_code" HeaderText="Exam Code" ReadOnly="True" SortExpression="exam_code"></asp:BoundField>
+                        <asp:BoundField DataField="exam_title" HeaderText="Title" SortExpression="exam_title"></asp:BoundField>
+                        <asp:BoundField DataField="exam_description" HeaderText="Description" SortExpression="exam_description"></asp:BoundField>
+                        <asp:BoundField DataField="exam_specialisation" HeaderText="Specialisation" SortExpression="exam_specialisation"></asp:BoundField>
+                        <asp:BoundField DataField="e_date" HeaderText="e_date" SortExpression="Date"></asp:BoundField>
+                        <asp:BoundField DataField="e_time" HeaderText="e_time" SortExpression="Time"></asp:BoundField>
+                        <asp:BoundField DataField="duration" HeaderText="duration" SortExpression="Duration"></asp:BoundField>
+                        <asp:TemplateField>
+                            <ItemTemplate>
+                                <asp:Button cssClass="btn-primary" ID="delete_registered_exams" runat="server"
+                                    CommandName="deleteRegisteredExamCommand"
+                                    CommandArgument="<%# CType(Container, GridViewRow).RowIndex %>"
+                                    Text="Delete" />
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                    </Columns>
+                </asp:GridView>
+                </div>
+            <div class="col-md-2"></div>
+            </div>
     </div>
     </form>
 </body>

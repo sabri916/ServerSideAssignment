@@ -4,7 +4,11 @@ Public Class Home
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
+        If (Session("email") = "admin@college.com") Then
+            Response.Redirect("AdminProfile.aspx")
+        ElseIf (Session("email") <> Nothing) Then
+            Response.Redirect("Profile.aspx")
+        End If
     End Sub
 
     Private Sub Verify_Account(email As String, password As String)

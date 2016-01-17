@@ -34,15 +34,15 @@
                 </div>
                 <div>
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Profile</a></li>
+                        <li><a href="Profile.aspx">Profile</a></li>
                         <li><a href="MyExams.aspx">My Exams</a></li>
                         <li class="active"><a href="studentExamRegistration.aspx">Exam Registration</a></li> 
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="divider-vertical"></li>
-                        <li><a href="RegistrationPage.aspx">Rules & Regulations</a></li>
+                        <li><a href="Rules.aspx">Rules & Regulations</a></li>
                         <li class="divider-vertical"></li>
-                        <li><a id="logout_link" runat="server" onServerClick="logout">Logout</a></li>
+                        <li><a id="logout_link" runat="server" onServerClick="logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                     </ul>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                 <asp:BoundField DataField="duration" HeaderText="duration" SortExpression="Duration"></asp:BoundField>
                 <asp:TemplateField>
                   <ItemTemplate>
-                    <asp:Button ID="register_exam_button" runat="server" 
+                    <asp:Button CssClass="btn-primary" ID="register_exam_button" runat="server" 
                       CommandName="RegisterExamCommand" 
                       CommandArgument="<%# CType(Container,GridViewRow).RowIndex %>"
                       Text="Register Exam" />

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Profile.aspx.vb" Inherits="ServerSideAssignment.Profile" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="AdminProfile.aspx.vb" Inherits="ServerSideAssignment.AdminProfile" %>
 
 <!DOCTYPE html>
 
@@ -36,11 +36,13 @@
             </div>
             <div>
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Profile</a></li>
-                    <li><a href="MyExams.aspx">My Exams</a></li>
-                    <li><a href="studentExamRegistration.aspx">Exam Registration</a></li> 
+                    <li class="active"><a href="#">Admin Profile</a></li>
+                    <li><a href="AdminExamManagement.aspx">Exam Management</a></li>
+                    <li><a href="StudentListAdmin.aspx">Student Management</a></li> 
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                    <li class="divider-vertical"></li>
+                    <li><a href="RegistrationPage.aspx"><span class="glyphicon glyphicon-user"></span>  Add Student</a></li>
                     <li class="divider-vertical"></li>
                     <li><a href="Rules.aspx">Rules & Regulations</a></li>
                     <li class="divider-vertical"></li>
@@ -50,8 +52,9 @@
         </div>
     </nav>
     <div class="container">
-        <div class="row"><div class="col-md-2"></div>
-            <div class="col-md-8">
+        <div class="row">
+            <div class="md-2"></div>
+                <div class="col-md-8">
                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="email" DataSourceID="SqlDataSource1">
                     <Columns>
                         <asp:CommandField ShowEditButton="True"></asp:CommandField>
@@ -87,9 +90,9 @@
                         <asp:Parameter Name="email" Type="String"></asp:Parameter>
                     </UpdateParameters>
                 </asp:SqlDataSource>
-                </div>
+                    </div>
             <div class="col-md-2"></div>
-        </div>
+            </div>
     </div>
     </form>
 </body>

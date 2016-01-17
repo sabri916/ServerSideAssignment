@@ -129,11 +129,11 @@
                 </div> 
 
                 <asp:Label ID="gender_label" runat="server" Text="gender"></asp:Label><br />
-                <asp:RadioButtonList ID="gender_list" runat="server">
+                <asp:RadioButtonList ID="gender_list" runat="server" CssClass="checkbox-inline">
                     <asp:ListItem value="M" Text="Male"></asp:ListItem>
                     <asp:ListItem value="F" Text="Female"></asp:ListItem>
                 </asp:RadioButtonList>
-
+                <br />
                 <asp:Label ID="calendar_label" runat="server" Text="Date of Birth"></asp:Label>
                 <asp:Calendar ID="dob_calendar" runat="server" BackColor="White" BorderColor="#999999" CellPadding="4" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" Height="180px" Width="200px">
                     <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" />

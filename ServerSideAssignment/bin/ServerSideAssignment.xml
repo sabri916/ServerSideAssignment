@@ -231,6 +231,42 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:ServerSideAssignment.AdminProfile._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminProfile._logout_link">
+<summary>
+logout_link control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminProfile._GridView1">
+<summary>
+GridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.AdminProfile._SqlDataSource1">
+<summary>
+SqlDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:ServerSideAssignment.Home._login_form">
 <summary>
 login_form control.
@@ -353,6 +389,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:ServerSideAssignment.MyExams._form1">
 <summary>
 form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.MyExams._logout_link">
+<summary>
+logout_link control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -647,6 +692,33 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:ServerSideAssignment.Rules._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.Rules._logout_link">
+<summary>
+logout_link control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.studentExamRegistration._logout_link">
+<summary>
+logout_link control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:ServerSideAssignment.studentExamRegistration._form1">
 <summary>
 form1 control.
@@ -677,6 +749,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:ServerSideAssignment.StudentListAdmin._form1">
 <summary>
 form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ServerSideAssignment.StudentListAdmin._logout_link">
+<summary>
+logout_link control.
 </summary>
 <remarks>
 Auto-generated field.

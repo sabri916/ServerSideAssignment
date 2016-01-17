@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class StudentListAdmin
+Partial Public Class AdminProfile
     
     '''<summary>
     '''form1 control.
@@ -32,13 +32,13 @@ Partial Public Class StudentListAdmin
     Protected WithEvents logout_link As Global.System.Web.UI.HtmlControls.HtmlAnchor
     
     '''<summary>
-    '''StudentGridView control.
+    '''GridView1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents StudentGridView As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
     
     '''<summary>
     '''SqlDataSource1 control.

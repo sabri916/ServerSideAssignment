@@ -4,7 +4,6 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Student Records Administration</title>
     <!--bootstrap-->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
@@ -17,10 +16,43 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!---end bootstrap-->
+
+    <script runat="server">
+
+        Sub logout(sender As Object, e As EventArgs)
+            Session.Abandon()
+            Response.Redirect("Home.aspx")
+        End Sub
+    </script>
+
+    <title>Student Management - Exam Registration System</title>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div class="table-hover">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Exam Registration System</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="AdminProfile.aspx">Admin Profile</a></li>
+                        <li><a href="AdminExamManagement.aspx">Exam Management</a></li>
+                        <li class="active"><a href="StudentListAdmin.aspx">Student Management</a></li> 
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="divider-vertical"></li>
+                        <li><a href="RegistrationPage.aspx"><span class="glyphicon glyphicon-user"></span>  Add Student</a></li>
+                        <li class="divider-vertical"></li>
+                        <li><a href="Rules.aspx">Rules & Regulations</a></li>
+                        <li class="divider-vertical"></li>
+                        <li><a id="logout_link" runat="server" onServerClick="logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="col-md-2"></div>
+    <div class="col-md-8">
         <asp:GridView ID="StudentGridView" runat="server" AutoGenerateColumns="False" DataKeyNames="email" DataSourceID="SqlDataSource1" AllowSorting="True">
             <Columns>
                 <asp:CommandField ShowEditButton="True" ShowDeleteButton="True"></asp:CommandField>
@@ -54,6 +86,7 @@
             </UpdateParameters>
         </asp:SqlDataSource>
     </div>
+        <div class="col-md-2"></div>
     </form>
 </body>
 </html>

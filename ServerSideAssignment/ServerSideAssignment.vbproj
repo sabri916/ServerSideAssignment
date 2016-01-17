@@ -93,10 +93,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminExamManagement.aspx" />
+    <Content Include="AdminProfile.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="MyExams.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="RegistrationPage.aspx" />
+    <Content Include="Rules.aspx" />
     <Content Include="studentExamRegistration.aspx" />
     <Content Include="StudentListAdmin.aspx" />
     <Content Include="Web.config" />
@@ -108,6 +110,13 @@
     <Compile Include="AdminExamManagement.aspx.vb">
       <DependentUpon>AdminExamManagement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminProfile.aspx.designer.vb">
+      <DependentUpon>AdminProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminProfile.aspx.vb">
+      <DependentUpon>AdminProfile.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Home.aspx.designer.vb">
       <DependentUpon>Home.aspx</DependentUpon>
@@ -154,6 +163,13 @@
     </Compile>
     <Compile Include="RegistrationPage.aspx.vb">
       <DependentUpon>RegistrationPage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Rules.aspx.designer.vb">
+      <DependentUpon>Rules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rules.aspx.vb">
+      <DependentUpon>Rules.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="studentExamRegistration.aspx.designer.vb">
